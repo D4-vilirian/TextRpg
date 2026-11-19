@@ -1,0 +1,41 @@
+{
+"zumbi": {
+"vida": 100, 
+"dano": 15
+},
+"player": {
+"vida": 100,
+"dano": 20
+},
+"sol": {
+"zumbi":{
+"vida": -10,
+"dano": -5
+},
+"player":{
+"vida": 120,
+"dano": 30
+}
+},
+"lua":{
+"zumbi":{
+"vida": 150,
+"dano": 30
+},
+"player":{
+"vida": -10,
+"dano": -5
+}
+},
+"pocoes":{
+"pocao pequena":{
+"cura": 25
+},
+"pocao média":{
+"cura": 50
+},
+"pocao grande":{ 
+"cura": 100
+}
+}
+}
