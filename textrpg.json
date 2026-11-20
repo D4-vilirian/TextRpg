@@ -7,6 +7,10 @@
 "vida": 100,
 "dano": 20
 },
+"ptimeldano zumbieyer":{
+"vida": 1000,
+"dano": 40
+},
 "sol": {
 "zumbi":{
 "vida": -10,
@@ -37,5 +41,45 @@
 "pocao grande":{ 
 "cura": 100
 }
+},
+"nenhum":{
+"zumbi":{
+"vida": 0,
+"dano": 0
+},
+"player":{
+"vida":0,
+"dano":0
+}
+},
+"chuva":{
+"Troll":{
+"vida": 1250,
+"dano":45
+},
+"player":{
+"vida":0,
+"dano": 0
+},
+"zumbi":{
+"vida": 0,
+"dano":0
+}
+},
+"benção":{
+"benção dos mortos-vivos":{
+"player":{
+"vida": 1000,
+"dano": 26
 }
 }
+}
+}
+
+
+
+
+
+
+
+
