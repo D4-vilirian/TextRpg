@@ -72,17 +72,8 @@ while True:
                 if novo == "recomeçar":
                     print("você morreu! novo jogo :")
                     continue
-    else:
-        novo = input("por favor, digite recomeçar :")
-        if novo  == "recomeçar": 
-            continue
-    else:
-        if vida_ptimeldano_zumbieyer <= 0:
+    if vida_ptimeldano_zumbieyer <= 0:
                 novo = input("voce matou o boss!espere mais no futuro. digite recomeçar :")
                 if novo == "recomeçar":
                     print("novo jogo")
                     continue
-    else:
-        novo = input("por favor, digite recomeçar :")
-        if novo == "recomeçar":
-            continue
