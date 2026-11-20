@@ -31,17 +31,6 @@
 "dano": -5
 }
 },
-"pocoes":{
-"pocao pequena":{
-"cura": 25
-},
-"pocao média":{
-"cura": 50
-},
-"pocao grande":{ 
-"cura": 100
-}
-},
 "nenhum":{
 "zumbi":{
 "vida": 0,
@@ -53,9 +42,9 @@
 }
 },
 "chuva":{
-"Troll":{
-"vida": 1250,
-"dano":45
+"ptimeldano zumbieyer":{
+"vida": 250,
+"dano":25
 },
 "player":{
 "vida":0,

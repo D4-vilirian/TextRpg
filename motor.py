@@ -38,24 +38,25 @@ while True:
                 novo = input("você morreu! digite recomeçar :")
                 if novo == "recomeçar":
                     print(" você perdeu! novo jogo:")
-                    break
+                    continue
             if vida_zumbi <= 0:
-                vida_player = vida_player + dados["benção"] ["benção dos mortos-vivos"] ["player"] ["vida"]
-                dano_player = dano_player + dados["benção"] ["benção dos mortos-vivos"] ["player"] ["dano"]
-                print("você recebeu a benção dos mortos vivos por matar o zumbi!")
-                novo = input("digite fase 2 para a fase 2:")
-                if novo == "fase2":
-                    print("vida do ptimeldano:", vida_ptimeldano_zumbieyer)
-                    print("vida do player:", vida_player)
-                    acao = input ("digite atacar para atacar o boss ptimeldano zumbieyer :")   
-                    if acao == "atacar":
-                        vida_ptimeldano_zumbieyer = vida_ptimeldano_zumbieyer - dano_player
-                        print("você atacou!")
-                        vida_player = vida_player - dano_ptimeldano_zumbieyer
-                        print("o ptimeldano te atacou!")
-                        print("vida do player:", vida_player)
+                if vida_zumbi <= 0:
+                    vida_player = vida_player + dados["benção"] ["benção dos mortos-vivos"] ["player"] ["vida"]
+                    dano_player = dano_player + dados["benção"] ["benção dos mortos-vivos"] ["player"] ["dano"]
+                    print("você recebeu a benção dos mortos vivos por matar o zumbi!")
+                    novo = input("digite fase 2 para a fase 2:")
+                    if novo == "fase2":
                         print("vida do ptimeldano:", vida_ptimeldano_zumbieyer)
-        while vida_ptimeldano_zumbieyer > 0:
+                        print("vida do player:", vida_player)
+                        acao = input ("digite atacar para atacar o boss ptimeldano zumbieyer :")   
+                        if acao == "atacar":
+                            vida_ptimeldano_zumbieyer = vida_ptimeldano_zumbieyer - dano_player
+                            print("você atacou!")
+                            vida_player = vida_player - dano_ptimeldano_zumbieyer
+                            print("o ptimeldano te atacou!")
+                            print("vida do player:", vida_player)
+                            print("vida do ptimeldano:", vida_ptimeldano_zumbieyer)
+    while vida_ptimeldano_zumbieyer > 0:
                     print("vida do ptimeldano:", vida_ptimeldano_zumbieyer)
                     print("vida do player:", vida_player)
                     acao = input ("digite atacar para atacar o boss ptimeldano zumbieyer :")
@@ -69,10 +70,19 @@ while True:
     if vida_player <= 0:
                 novo = input("você morreu! digite recomeçar :")
                 if novo == "recomeçar":
-                    print("você morreu! novo jogo:")
-                    break
-    if vida_ptimeldano_zumbieyer <= 0:
+                    print("você morreu! novo jogo :")
+                    continue
+    else:
+        novo = input("por favor, digite recomeçar :")
+        if novo  == "recomeçar": 
+            continue
+    else:
+        if vida_ptimeldano_zumbieyer <= 0:
                 novo = input("voce matou o boss!espere mais no futuro. digite recomeçar :")
                 if novo == "recomeçar":
                     print("novo jogo")
-                    break
+                    continue
+    else:
+        novo = input("por favor, digite recomeçar :")
+        if novo == "recomeçar":
+            continue
